@@ -12,12 +12,11 @@ A real-time Tic Tac Toe game built with Node.js and Socket.IO. This game allows 
 - **Game Notifications**: Alerts players when it’s their turn, when the game is over, or if the opponent leaves the game.
 - **Modern Design**: The interface features a clean, futuristic look with a responsive layout.
 
-**Live Url:**
+## Live URL
 
     ```bash
     https://tic-tac-toe-ni9y.onrender.com/
     ```
-
 
 ## Installation
 
