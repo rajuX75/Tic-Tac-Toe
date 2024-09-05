@@ -14,9 +14,9 @@ A real-time Tic Tac Toe game built with Node.js and Socket.IO. This game allows 
 
 ## Live URL
 
-    ```bash
+   
     https://tic-tac-toe-ni9y.onrender.com/
-    ```
+
 
 ## Installation
 
