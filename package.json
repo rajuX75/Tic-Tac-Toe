@@ -6,8 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "echo \"No build script specified\" && exit 1", // Add a build script if needed
-    "lint": "echo \"No linting script specified\" && exit 1"  // Optional linting script
+    "build": "echo \"No build script specified\" && exit 1",
+    "lint": "echo \"No linting script specified\" && exit 1" 
   },
   "keywords": [],
   "author": "",
