@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Futuristic Tic Tac Toe</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h2>Game Controls</h2>
+
+                <!-- User Inputs -->
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input
+                        type="text"
+                        id="username"
+                        class="input-field"
+                        placeholder="Enter your username"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <label for="roomId">Room ID:</label>
+                    <input
+                        type="text"
+                        id="roomId"
+                        class="input-field"
+                        placeholder="Enter room ID"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Room Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        class="input-field"
+                        placeholder="Enter room password"
+                    />
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="buttons">
+                    <button id="createRoomBtn" class="btn">Create Room</button>
+                    <button id="joinRoomBtn" class="btn btn-secondary">
+                        Join Room
+                    </button>
+                </div>
+
+                <!-- Game Info -->
+                <div class="game-info">
+                    <div id="players" class="players-info"></div>
+                    <div id="symbol" class="symbol-info"></div>
+                    <div id="status" class="status-message">
+                        Waiting for players...
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Player Display -->
+                <div class="player-display">
+                    <div class="player-info">
+                        <img
+                            src="1.jfif"
+                            alt="Player 1"
+                            class="profile-pic"
+                            id="player1Pic"
+                        />
+                        <span id="player1Name" class="player-name"
+                            >Player 1</span
+                        >
+                    </div>
+                    <span class="vs">VS</span>
+                    <div class="player-info">
+                        <img
+                            src="2.jfif"
+                            alt="Player 2"
+                            class="profile-pic"
+                            id="player2Pic"
+                        />
+                        <span id="player2Name" class="player-name"
+                            >Player 2</span
+                        >
+                    </div>
+                </div>
+                <!-- Game Board -->
+                <div id="gameBoard" class="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+            </main>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <span class="app-version">App Version: 1.0.0</span>
+                <span class="server-status"
+                    >Server Status: <span id="serverStatus">Online</span></span
+                >
+            </div>
+        </footer>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+    </body>
+</html>
